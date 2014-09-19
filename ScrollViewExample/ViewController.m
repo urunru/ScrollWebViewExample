@@ -14,9 +14,7 @@
 }
 @end
 
-const CGFloat kScrollObjHeight = 460.0;//(※1)1pageの高さ
-const CGFloat kScrollObjWidth  = 320.0;//(※2)1pageの幅
-const NSUInteger kNumImages    = 3;    //(※3)総page数
+const NSUInteger maxPage = 3;    //(※3)総page数
 
 @implementation ViewController
 
@@ -25,14 +23,14 @@ const NSUInteger kNumImages    = 3;    //(※3)総page数
     [super viewDidLoad];
     scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
-    scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width*kNumImages, scrollView.bounds.size.height);
+    scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width*maxPage, scrollView.bounds.size.height);
     scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     scrollView.pagingEnabled = YES;
     scrollView.bouncesZoom = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     
-    for (int i = 0; i < kNumImages ; i++){
+    for (int i = 0; i < maxPage ; i++){
         UIWebView *webView = [[UIWebView alloc] init];
         webView.frame = CGRectMake(scrollView.bounds.size.width * i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height);
         webView.tag = i;
