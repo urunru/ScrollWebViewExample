@@ -14,13 +14,15 @@
 }
 @end
 
-const NSUInteger maxPage = 3;    //(※3)総page数
+const NSUInteger maxPage = 3; // 総page数
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // スクロールビューの定義
     scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width*maxPage, scrollView.bounds.size.height);
@@ -30,6 +32,7 @@ const NSUInteger maxPage = 3;    //(※3)総page数
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     
+    // スクロールビューに追加するビューの作成
     for (int i = 0; i < maxPage ; i++){
         UIWebView *webView = [[UIWebView alloc] init];
         webView.frame = CGRectMake(scrollView.bounds.size.width * i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height);
@@ -47,9 +50,7 @@ const NSUInteger maxPage = 3;    //(※3)総page数
                 break;
         }
         NSURL* googleURL = [NSURL URLWithString: urlString];
-        // さらにこれを使って、Requestオブジェクトをつくります
         NSURLRequest* myRequest = [NSURLRequest requestWithURL: googleURL];
-        // これを、myFirstWebViewのloadRequestメソッドに渡します
         [webView loadRequest:myRequest];
         [scrollView addSubview:webView];
     }
