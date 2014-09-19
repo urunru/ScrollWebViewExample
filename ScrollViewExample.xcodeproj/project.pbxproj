@@ -22,6 +22,9 @@
 		29A8D1A719CC021000A9E8DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A8D18619CC021000A9E8DA /* UIKit.framework */; };
 		29A8D1AF19CC021000A9E8DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29A8D1AD19CC021000A9E8DA /* InfoPlist.strings */; };
 		29A8D1B119CC021000A9E8DA /* ScrollViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A8D1B019CC021000A9E8DA /* ScrollViewExampleTests.m */; };
+		29A8D1BD19CC032900A9E8DA /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A8D1BA19CC032900A9E8DA /* img3.png */; };
+		29A8D1BE19CC032900A9E8DA /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A8D1BB19CC032900A9E8DA /* img2.png */; };
+		29A8D1BF19CC032900A9E8DA /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A8D1BC19CC032900A9E8DA /* img1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		29A8D1AC19CC021000A9E8DA /* ScrollViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		29A8D1AE19CC021000A9E8DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29A8D1B019CC021000A9E8DA /* ScrollViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewExampleTests.m; sourceTree = "<group>"; };
+		29A8D1BA19CC032900A9E8DA /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		29A8D1BB19CC032900A9E8DA /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		29A8D1BC19CC032900A9E8DA /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 		29A8D18819CC021000A9E8DA /* ScrollViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				29A8D1BA19CC032900A9E8DA /* img3.png */,
+				29A8D1BB19CC032900A9E8DA /* img2.png */,
+				29A8D1BC19CC032900A9E8DA /* img1.png */,
 				29A8D19119CC021000A9E8DA /* AppDelegate.h */,
 				29A8D19219CC021000A9E8DA /* AppDelegate.m */,
 				29A8D19419CC021000A9E8DA /* Main_iPhone.storyboard */,
@@ -232,6 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A8D19919CC021000A9E8DA /* Main_iPad.storyboard in Resources */,
+				29A8D1BD19CC032900A9E8DA /* img3.png in Resources */,
+				29A8D1BF19CC032900A9E8DA /* img1.png in Resources */,
+				29A8D1BE19CC032900A9E8DA /* img2.png in Resources */,
 				29A8D19E19CC021000A9E8DA /* Images.xcassets in Resources */,
 				29A8D19619CC021000A9E8DA /* Main_iPhone.storyboard in Resources */,
 				29A8D18D19CC021000A9E8DA /* InfoPlist.strings in Resources */,
